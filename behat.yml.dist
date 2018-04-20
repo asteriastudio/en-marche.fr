@@ -6,6 +6,8 @@ default:
                 - Behatch\Context\BrowserContext:
                     timeout: 3
                 - Behatch\Context\XmlContext
+                - Behatch\Context\DebugContext:
+                    screenshotDir: "var/cache/selenium/"
                 - FixtureContext:
                     manager: "@doctrine.orm.default_entity_manager"
                 - RestContext

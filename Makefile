@@ -178,7 +178,6 @@ deps: vendor web/built                                                          
 # Internal rules
 
 build:
-	$(DOCKER_COMPOSE) pull --parallel --ignore-pull-failures
 	$(DOCKER_COMPOSE) build --force-rm
 
 up:

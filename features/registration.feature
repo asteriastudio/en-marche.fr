@@ -70,6 +70,9 @@ Feature:
     Then I should see "Pour vous connecter vous devez confirmer votre adhésion. Si vous n'avez pas reçu le mail de validation, vous pouvez cliquer ici pour le recevoir à nouveau."
 
     When I click on the email link "activation_link"
+    Then I should be on "/inscription/centre-interets"
+
+    When I press "Passer cette étape"
     Then I should be on "/espace-adherent/accueil"
 
   Scenario: I can register as a user
